@@ -113,7 +113,7 @@ function App() {
           //now what happen in the changeHandler function when we press the chechbox it first check if the type is checked which is true for checkbox now the name is set to be checked(which is false for now) so the name contain false now
           id="isVisible"
           checked={formData.isVisible}
-          //for the checkboxes we don't use value attribute we use "checked" attribute
+          //for the checkboxes we don't use value as a attribute we use "checked" attribute
         />
         {/* below htmlFor="isVisible" is the id of that componenet which we are attaching to the label */}
         <label htmlFor="isVisible"> Am I visible</label>
@@ -163,6 +163,8 @@ function App() {
         {/* <input type="submit" value="submit" /> */}
         <br />
         <br />
+
+        
         <button className="p-1 bg-blue-300 rounded-full">Submit</button>
 
 
