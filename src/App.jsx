@@ -20,6 +20,16 @@ function App() {
                 [name]: type === "checkbox" ? checked : value,
                 // Above only for the check box first we are checking the type if the type it is checkbox it means name:checked else the name:value
                 // Here name is firstName, lastName, all fields except type === "checkbox"
+                /*
+                Below is the example of this how it works
+
+                when any one write for say in the first input field "amandeep" now the changeHandler will work
+                now the name, value, checked, type fetched from the event.target in which 
+                all the previous data is taken from the useState and the [name] which is now firstName : "amandeep" will come.
+
+                when some one press the Am i visible field now again the changeHandler will work and name,value , checked, type fetched from the event.target in which all the preivous data is taken from the usestate and Now the [name] have the type checkbox (condition metted) of the value of the name setted to checked instead of "value"
+
+                */
             };
             //what it actully doing is below
             //for the first input field || event.target.name is firstName which become equal to event.target.value which we enter
@@ -84,6 +94,8 @@ function App() {
 
                 <br />
 
+
+                {/* checkbox filed */}
                 <input
                     type="checkbox"
                     onChange={changeHandler}
@@ -139,7 +151,7 @@ function App() {
                 </select>
 
                 {/* <input type="submit" value="submit" /> */}
-                
+
                 <br />
                 <br />
 
